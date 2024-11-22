@@ -1,0 +1,117 @@
+.nav-item {
+    position: relative; 
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    background-color: #007bff; 
+    border-radius: 5px; 
+  }
+  
+  .nav-link {
+    color: white;
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  .nav-item:hover .nav-link {
+    color: white;
+  }
+  
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    animation: typing 8s linear infinite, blink 0.5s step-end infinite;
+  width: 0; /* Mulai dari lebar nol */
+    
+  }
+  .typed-out2{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    animation: typing 10s linear infinite, blink 0.5s step-end infinite;
+    width: 0; /* Mulai dari lebar nol */
+    
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+    100% { border-color: orange; }
+  }
+
+
+  /* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  .text-head {
+    text-align: center;
+    color: black;
+  }
+  
+  .Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-img {
+    width: 35%; 
+  }
+  
+  .text-container {
+    color: white; 
+  }
+  
+  .text-container h1 {
+    margin: 0;
+    font-size: 2rem; 
+  }
+  
+  .text-container p {
+    margin: 5px 0; 
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+      text-align: center; 
+    }
+    
+    .profile-img {
+      width: 50%; 
+    }
+  }
+  
